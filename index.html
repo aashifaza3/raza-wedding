@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Raza & Dreamwife | Wedding Invitation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,600&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Background music -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="music/wedding-background.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Music control -->
+<button id="musicButton" class="music-button" aria-label="Toggle music">
+    ♫
+</button>
+
+
+<!-- =========================
+     OPENING GATE
+========================= -->
+
+<section id="openingScreen" class="opening-screen">
+
+    <div class="sparkles"></div>
+
+    <div class="opening-background">
+
+        <div class="mosque">
+            ☾
+        </div>
+
+    </div>
+
+    <div class="gate gate-left">
+        <div class="gate-inner">
+            <div class="gate-symbol">✦</div>
+        </div>
+    </div>
+
+    <div class="gate gate-right">
+        <div class="gate-inner">
+            <div class="gate-symbol">✦</div>
+        </div>
+    </div>
+
+
+    <div id="openingContent" class="opening-content">
+
+        <div class="bismillah">
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </div>
+
+        <p class="opening-small">
+            YOU ARE CORDIALLY INVITED TO
+        </p>
+
+        <h1>
+            The Wedding
+            <span>Ceremony</span>
+        </h1>
+
+        <div class="gold-decoration">
+            ─── ✦ ❖ ✦ ───
+        </div>
+
+        <button id="openInvitation">
+            OPEN OUR INVITATION
+        </button>
+
+        <p class="tap-note">
+            Tap to open • Music will begin
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MAIN INVITATION
+========================= -->
+
+<main id="invitation" class="invitation">
+
+
+<!-- COUPLE REVEAL -->
+
+<section class="couple-section">
+
+    <div class="floating-light light1"></div>
+    <div class="floating-light light2"></div>
+    <div class="floating-light light3"></div>
+
+    <div class="section-content reveal">
+
+        <div class="crescent">
+            ☾
+        </div>
+
+        <p class="arabic">
+            بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </p>
+
+        <p class="family-text">
+            TOGETHER WITH OUR FAMILIES
+        </p>
+
+
+        <div class="couple-picture">
+
+            <img src="images/couple.png"
+                 alt="Bride and groom wedding illustration"
+                 onerror="this.style.display='none'; document.getElementById('coupleFallback').style.display='flex';">
+
+            <div id="coupleFallback" class="couple-fallback">
+                <span>☾</span>
+                <p>Add your Islamic bride & groom artwork as<br><b>images/couple.png</b></p>
+            </div>
+
+        </div>
+
+
+        <div class="names">
+
+            <h1 class="groom-name">
+                Raza
+            </h1>
+
+            <div class="ampersand">
+                &
+            </div>
+
+            <h1 class="bride-name">
+                Dreamwife
+            </h1>
+
+        </div>
+
+
+        <p class="journey">
+            Two hearts... One beautiful journey...
+        </p>
+
+        <div class="scroll-indicator">
+            <span>Scroll to continue</span>
+            <div>⌄</div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- INVITATION MESSAGE -->
+
+<section class="message-section">
+
+    <div class="ornamental-card reveal">
+
+        <div class="small-crescent">
+            ☾
+        </div>
+
+        <h2>
+            Together with our families,
+        </h2>
+
+        <p>
+            we request the pleasure of your company
+            as we celebrate our special day.
+        </p>
+
+        <div class="gold-decoration">
+            ─── ❖ ───
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- DATE -->
+
+<section class="reveal-section">
+
+    <div class="detail-card reveal">
+
+        <div class="detail-icon">
+            ▣
+        </div>
+
+        <p class="detail-label">
+            SAVE THE DATE
+        </p>
+
+        <h1>
+            15
+        </h1>
+
+        <h2>
+            December
+        </h2>
+
+        <h3>
+            2026
+        </h3>
+
+    </div>
+
+</section>
+
+
+
+<!-- TIME -->
+
+<section class="reveal-section alternate">
+
+    <div class="detail-card reveal">
+
+        <div class="detail-icon clock-icon">
+            ◷
+        </div>
+
+        <p class="detail-label">
+            THE CELEBRATION BEGINS AT
+        </p>
+
+        <h1 class="time">
+            7:00
+        </h1>
+
+        <h2>
+            PM
+        </h2>
+
+        <h3>
+            Indian Standard Time
+        </h3>
+
+    </div>
+
+</section>
+
+
+
+<!-- LOCATION -->
+
+<section class="reveal-section">
+
+    <div class="detail-card reveal">
+
+        <div class="detail-icon">
+            ♧
+        </div>
+
+        <p class="detail-label">
+            JOIN US IN
+        </p>
+
+        <h1 class="location-title">
+            Tolichowki
+        </h1>
+
+        <h2>
+            Hyderabad
+        </h2>
+
+        <p class="location-subtitle">
+            Telangana, India
+        </p>
+
+        <a
+            class="map-button"
+            href="https://www.google.com/maps/search/?api=1&query=Tolichowki+Hyderabad"
+            target="_blank"
+            rel="noopener">
+
+            VIEW LOCATION
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- DUA -->
+
+<section class="dua-section">
+
+    <div class="dua-content reveal">
+
+        <div class="dua-arabic">
+            بَارَكَ اللَّهُ لَكُمَا
+            وَبَارَكَ عَلَيْكُمَا
+            وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ
+        </div>
+
+        <div class="gold-decoration">
+            ✦ ❖ ✦
+        </div>
+
+        <p>
+            May Allah bless you both, shower His blessings
+            upon you and unite you in goodness.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- RSVP -->
+
+<section class="rsvp-section">
+
+    <div class="rsvp-card reveal">
+
+        <p class="rsvp-small">
+            KINDLY RESPOND
+        </p>
+
+        <h1>
+            Will you be attending?
+        </h1>
+
+        <div class="gold-decoration">
+            ─── ❖ ───
+        </div>
+
+
+        <div id="attendanceButtons" class="attendance-buttons">
+
+            <button id="yesButton" class="attendance yes">
+
+                <span class="attendance-icon">
+                    ✓
+                </span>
+
+                <span>
+                    <strong>YES</strong>
+                    <small>I'll Attend</small>
+                </span>
+
+            </button>
+
+
+            <button id="noButton" class="attendance no">
+
+                <span class="attendance-icon">
+                    ✕
+                </span>
+
+                <span>
+                    <strong>NO</strong>
+                    <small>Unable to Attend</small>
+                </span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Guest Details -->
+
+        <div id="guestForm" class="guest-form">
+
+            <div class="form-heading">
+                <span>✦</span>
+
+                <h2>
+                    Guest Details
+                </h2>
+
+                <p id="selectedResponse"></p>
+            </div>
+
+
+            <label for="fullName">
+                Full Name
+            </label>
+
+            <input
+                type="text"
+                id="fullName"
+                autocomplete="name"
+                placeholder="Enter your full name">
+
+
+            <label for="fatherName">
+                Father's Name
+            </label>
+
+            <input
+                type="text"
+                id="fatherName"
+                placeholder="Enter father's name">
+
+
+            <button id="submitRSVP"
+                    type="button"
+                    class="submit-button">
+
+                SUBMIT RSVP
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Thank you -->
+
+        <div id="thankYou" class="thank-you">
+
+            <div class="success-circle">
+                ✓
+            </div>
+
+            <h2>
+                JazakAllahu Khairan
+            </h2>
+
+            <p>
+                Your response has been received.
+            </p>
+
+            <div class="gold-decoration">
+                ✦ ❖ ✦
+            </div>
+
+            <h3>
+                Raza & Dreamwife
+            </h3>
+
+        </div>
+
+
+        <p class="response-note">
+            Your response will help us plan better... ♡
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-crescent">
+        ☾
+    </div>
+
+    <p>
+        We look forward to celebrating
+        this blessed occasion with you.
+    </p>
+
+    <h2>
+        Raza & Dreamwife
+    </h2>
+
+    <span>
+        15 December 2026 • 7:00 PM • Hyderabad
+    </span>
+
+</footer>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
